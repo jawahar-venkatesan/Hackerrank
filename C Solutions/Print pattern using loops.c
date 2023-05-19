@@ -3,16 +3,16 @@
 int main()
 {
     int n;
-    n = 4;
-    //scanf("%d", &n);
-  	// Complete the code to print the pattern.
-    for(int k=2*n-1; k>0; k--)
+   
+    scanf("%d", &n);
+  	
+    for(int a=2*n-1; a>0; a--)
     {
         for(int i=2*n-1; i>0;i--)
         {
-            if(abs(n-k)>abs(n-i))
+            if(abs(n-a)>abs(n-i))
             {
-                printf("%d ", abs(n-k)+1);
+                printf("%d ", abs(n-a)+1);
             }
             else
             {
