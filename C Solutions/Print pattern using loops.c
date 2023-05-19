@@ -1,27 +1,26 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 {
-    int n,end_val,x ,y;
-    //Initialising the input cuz i'm lazy
-
-    n = 3;
-    end_val = (n*2)-1;
-
-
-    for(int i = 1; i <= end_val;i++){
-
-        for(int j = 1;j <= end_val;j++){
-
-            if(i ==1 || j==1 || i == end_val || j==end_val){
-                printf("%d ",n);
-            }else if(i ==2 || j==2 || i == end_val-1 || j==end_val-1){
-                printf("%d ",n-1);
-            }else{
-                printf("%d ",1);
+    int n;
+    n = 4;
+    //scanf("%d", &n);
+  	// Complete the code to print the pattern.
+    for(int k=2*n-1; k>0; k--)
+    {
+        for(int i=2*n-1; i>0;i--)
+        {
+            if(abs(n-k)>abs(n-i))
+            {
+                printf("%d ", abs(n-k)+1);
             }
-
+            else
+            {
+                printf("%d ", abs(n-i)+1);
+            }
         }
         printf("\n");
     }
+    return 0;
     
 }
