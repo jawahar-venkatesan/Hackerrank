@@ -20,6 +20,15 @@ To run the Python solutions, make sure you have Python installed on your system.
 ```python
 python hello-world.py
 ```
+# Java Solutions
+The java-solutions folder contains my solutions to HackerRank problems written in Java. Each problem has its own file with the problem name as the file name.
+
+To compile and run the Java solutions, make sure you have Java installed on your system. For example, to compile and run the solution to the hello-world problem, navigate to the java-solutions folder and run the following commands:
+
+```java
+javac HelloWorld.java
+java HelloWorld
+```
 
 # Contributing
 If you'd like to contribute to this repository, please feel free to submit a pull request. However, please make sure that your solutions are original and not copied from other sources.
